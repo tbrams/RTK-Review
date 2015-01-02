@@ -1,10 +1,12 @@
 package com.example.tbrams.rtkreview;
 
+import android.content.Context;
 import android.content.Intent;
+import android.net.ConnectivityManager;
+import android.net.NetworkInfo;
 import android.net.Uri;
-import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
-import android.util.Log;
+import android.support.v7.app.ActionBarActivity;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
@@ -80,10 +82,14 @@ public class MainActivity extends ActionBarActivity {
         String fromKanji =  Integer.toString(toc[lesson][0]);
         String toKanji = Integer.toString(toc[lesson][1]);
         String url="http://kanji.koohii.com/review/free?from="+fromKanji+"&to="+toKanji;
-        Log.d(LOGTAG, url);
 
-        Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse(url));
-        startActivity(intent);
+        if (isOnline()) {
+            Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse(url));
+            startActivity(intent);
+        } else {
+            Toast.makeText(this, "This app requires network access!", Toast.LENGTH_LONG).show();
+        }
+
     }
 
      // A private method to help us initialize our variables.
@@ -98,6 +104,16 @@ public class MainActivity extends ActionBarActivity {
         InitializeTOC();
         updateNumberOfKanjis();
 
+    }
+
+    protected boolean isOnline() {
+        ConnectivityManager cm = (ConnectivityManager) getSystemService(Context.CONNECTIVITY_SERVICE);
+        NetworkInfo netInfo = cm.getActiveNetworkInfo();
+        if (netInfo != null && netInfo.isConnectedOrConnecting()) {
+            return true;
+        } else {
+            return false;
+        }
     }
 
     private void updateNumberOfKanjis() {
