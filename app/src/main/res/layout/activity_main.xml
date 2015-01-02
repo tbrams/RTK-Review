@@ -9,9 +9,9 @@
         android:textSize="20dp"
         android:textStyle="bold"
         android:layout_height="wrap_content"
+        android:id="@+id/textView"
         android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:id="@+id/textView" />
+        android:layout_centerHorizontal="true" />
 
     <Button
         android:layout_width="wrap_content"

@@ -22,6 +22,7 @@ public class MainActivity extends ActionBarActivity {
     private static final String LOGTAG = "RTK Main";
     private SeekBar seekBar;
     private TextView textView, textNumber;
+//    private EditText textLesson;
     private int progress;
 
     @Override
@@ -97,6 +98,7 @@ public class MainActivity extends ActionBarActivity {
         seekBar = (SeekBar) findViewById(R.id.seekBar1);
         textView  = (TextView) findViewById(R.id.textView);
         textNumber  = (TextView) findViewById(R.id.textNumber);
+//        textLesson = (EditText) findViewById(R.id.textLesson);
 
         progress=0;
         seekBar.setMax(57);
@@ -104,7 +106,21 @@ public class MainActivity extends ActionBarActivity {
         InitializeTOC();
         updateNumberOfKanjis();
 
+//        textLesson.addTextChangedListener(tw);
     }
+
+//    private TextWatcher tw = new TextWatcher() {
+//        public void afterTextChanged(Editable s){
+//            Toast.makeText(MainActivity.this,"Text changed",Toast.LENGTH_SHORT).show();
+//        }
+//        public void  beforeTextChanged(CharSequence s, int start, int count, int after){
+//            Toast.makeText(MainActivity.this,"Lesson is now: "+s,Toast.LENGTH_SHORT).show();
+//            // you can check for enter key here
+//        }
+//        public void  onTextChanged (CharSequence s, int start, int before,int count) {
+//        }
+//    };
+
 
     protected boolean isOnline() {
         ConnectivityManager cm = (ConnectivityManager) getSystemService(Context.CONNECTIVITY_SERVICE);
@@ -125,9 +141,10 @@ public class MainActivity extends ActionBarActivity {
         else if (progress+FIRST_LESSON==58)
             message="RTK Suppl.";
         else
-            message="Lesson: " + (progress+FIRST_LESSON);
+            message= String.valueOf(progress+FIRST_LESSON);
 
-        textView.setText(message);
+        textView.setText("Lesson: "+message);
+//        textLesson.setText(message);
     }
 
     private void InitializeTOC() {
