@@ -3,6 +3,10 @@ Makes the free review at kanji.koohii.com so much easier
 
 ## Start
 Start by selecting a chapter from the book by using the slider
+
+Here is - hopefully - a scaled down picture first
+<img src="https://cloud.githubusercontent.com/assets/3058746/21928493/bc9497d8-d9bd-11e6-9cef-cf3e886494c3.png" width="600">
+
 ![screenshot_1484306679](https://cloud.githubusercontent.com/assets/3058746/21928493/bc9497d8-d9bd-11e6-9cef-cf3e886494c3.png)
 
 The press OK and the kanji.koohii.com site takes over
