@@ -8,7 +8,7 @@ Start by selecting a chapter from the book by using the slider
 <img src="https://cloud.githubusercontent.com/assets/3058746/21928493/bc9497d8-d9bd-11e6-9cef-cf3e886494c3.png" width="500">
 </p>
 
-The press OK and the kanji.koohii.com site takes over
+The press "REVIEW" and the kanji.koohii.com site takes over
 <p align="center">
 <img src="https://cloud.githubusercontent.com/assets/3058746/21928499/c28c6f80-d9bd-11e6-883d-cc8e9c71cb60.png" width="500">
 </p>
