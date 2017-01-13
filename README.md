@@ -9,7 +9,9 @@ Start by selecting a chapter from the book by using the slider
 </p>
 
 The press OK and the kanji.koohii.com site takes over
+<p align="center">
 <img src="https://cloud.githubusercontent.com/assets/3058746/21928499/c28c6f80-d9bd-11e6-883d-cc8e9c71cb60.png" width="500">
+</p>
 
 Notice that you can use all the hotkeys you are used to use on the website - "Space" will flip the card. "S" will show you the story etc.
 <p align="center">
