@@ -2,9 +2,8 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/RTKReview.iml" filepath="$PROJECT_DIR$/RTKReview.iml" />
+      <module fileurl="file://$PROJECT_DIR$/RTK-Review.iml" filepath="$PROJECT_DIR$/RTK-Review.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
     </modules>
   </component>
 </project>
-
